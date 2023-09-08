@@ -17,17 +17,17 @@ main PROC
     push -11
     call GetStdHandle
     
-    xor ecx, ecx       ; 2
-    push ecx           ; 1
-    push ecx           ; 1
-    push string_len    ; 5
-    lea ebx, [string]  ; 6
-    push ebx           ; 1
-    push eax           ; 1
-    call WriteFile     ; 5
+    xor ecx, ecx
+    push ecx
+    push ecx
+    push string_len
+    lea ebx, [string]
+    push ebx
+    push eax
+    call WriteFile
 
-    push ecx           ; 1
-    call ExitProcess   ; 5
+    push ecx
+    call ExitProcess
 main ENDP
 
 END main
